@@ -1,0 +1,109 @@
+header {  
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition: 1s;
+  top: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+header .wrap {  
+  align-items: center;
+}
+header .wrap h1 {
+  
+}
+header .wrap h1 a {
+  font-size: 0;
+  width: 45px;
+  height: 35px;
+  display: block;
+  background-image: url(../img/logo.svg);
+}
+header .wrap h1 a::after{
+  content: "";  
+  width: 140px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../img/logotext.svg);
+  margin-left: 45px;
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: 90%;
+  background-position-y: 8px;
+}
+header .wrap ul.gnb {  
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+header .wrap ul.gnb li {
+  
+}
+header .wrap ul.gnb li a {
+  padding: 0 20px;
+}
+header .wrap div.right {
+   gap: 35px;
+   font-size: 13px;
+   align-items: center;
+}
+header .wrap div.right ul.lang {
+  
+}
+header .wrap div.right ul.lang li {
+  
+}
+header .wrap div.right ul.lang li a {  
+  padding: 10px 5px;
+}
+header .wrap div.right ul.lang li:nth-child(1) {
+  
+}
+header .wrap div.right ul.lang li:nth-child(1) a {  
+  color: #989494;
+}
+header .wrap div.right > a.ham {  
+  /*! font-size: 0; */
+  /*! width: 35px; */
+  /*! height: 4px; */
+  /*! border-top: 4px solid #333; */
+  /*! border-bottom: 4px solid #333; */
+}
+
+header .updown {  
+  font-size: 0;
+  background-image: url(../img/arrow_drop_up.svg);
+  display: block;
+  width: 70px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 64px;
+  background-color: #ccc;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  line-height: 30px;
+  background-position: center;
+  top: 90px;
+}
+header .updown::before{
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  border-top: 1px solid#ccc;
+  width: 100vw;
+}
+.opacity1{
+  opacity: 1 !important;
+}
+.up{
+  top:-90px;
+}
+.upbg{
+  background-image: url(../img/arrow_drop_down_.svg) !important;
+}
